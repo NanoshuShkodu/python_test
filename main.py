@@ -58,33 +58,3 @@ def make_pass(length = 8, letters = False, punctuation = False):
                 return my_password
 
 print(make_pass(pass_length, pass_letters_bool, pass_punctuation_bool))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-# Малювання консолі
-def draw_interface(data):
-    # Очищення екрану
-    print("\033[H\033[J", end = '')
-    print("==== Динамічний інтерфейс ====")
-    for item in data:
-        print(item)
-
-data = [f"Рядок {i}" for i in range(1, 6)]
-
-for i in range(10):
-    data[0] = f"Оновлено: {i}"  # Динамічно змінюємо дані
-    draw_interface(data)
-    time.sleep(0.5)
-'''
